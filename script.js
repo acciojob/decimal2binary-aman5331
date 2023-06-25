@@ -5,13 +5,9 @@
 
 // module.exports = threeSum;
 
-function decimalToBinary(decimalNumber) {
-  let binaryNumber = "";
+function decimalToBinary(decimal) {
+  // Use toString() with base 2 to convert decimal to binary
+  const binary = decimal.toString(2);
 
-  while (decimalNumber > 0) {
-    binaryNumber = (decimalNumber % 2) + binaryNumber;
-    decimalNumber = Math.floor(decimalNumber / 2);
-  }
-
-  return binaryNumber;
+  return binary;
 }
